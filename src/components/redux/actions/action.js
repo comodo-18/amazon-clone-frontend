@@ -1,6 +1,6 @@
 export const getProducts=()=>async(dispatch)=>{
 try {
-    const data=await fetch("https://amazon-clone-production-fe60.up.railway.app/getproducts",{
+    const data=await fetch("https://amazon-api-xxig.onrender.com/getproducts",{
         methodL:"GET",
         headers:{
             'Content-Type': 'applicaton/json'

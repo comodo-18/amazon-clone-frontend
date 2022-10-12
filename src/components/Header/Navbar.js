@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   const getValidUser = async () => {
-    const res = await fetch("https://amazon-clone-production-fe60.up.railway.app/validuser", {
+    const res = await fetch("https://amazon-api-xxig.onrender.com/validuser", {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -53,7 +53,7 @@ const Navbar = () => {
   };
 
   const logoutUser = async () => {
-    const res = await fetch("https://amazon-clone-production-fe60.up.railway.app/logout", {
+    const res = await fetch("https://amazon-api-xxig.onrender.com/logout", {
       method: "GET",
       headers: {
         Accept: "application/json",

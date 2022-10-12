@@ -27,7 +27,7 @@ const Signup = () => {
     e.preventDefault();
     const { name, email, number, password, cpassword } = credentials;
 
-    const res = await fetch("https://amazon-clone-production-fe60.up.railway.app/signup", {
+    const res = await fetch("https://amazon-api-xxig.onrender.com/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

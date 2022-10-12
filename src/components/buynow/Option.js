@@ -4,7 +4,7 @@ import { LoginContext } from "../../context/ContextProvider";
 const Option = ({ id,getCartItems }) => {
   const { account, setAccount } = useContext(LoginContext);
   const deleteData = async (id) => {
-    const res=await fetch(`https://amazon-clone-production-fe60.up.railway.app/deleteitems/${id}`,{
+    const res=await fetch(`https://amazon-api-xxig.onrender.com/deleteitems/${id}`,{
       method:"DELETE",
       headers:{
         Accept:'application/json',

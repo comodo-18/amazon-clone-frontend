@@ -150,7 +150,7 @@ header .extrasearch{
     background-color: #fff;
     color: #000;
     top: 48px;
-    left: 705px;
+    /* left: 705px; */
     
     width: 412px;
 }

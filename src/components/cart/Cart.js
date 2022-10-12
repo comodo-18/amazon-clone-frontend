@@ -2,7 +2,7 @@ import { Divider } from "@mui/material";
 import React, { useState, useEffect, useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./cart.css";
-// import img from "./img.webp";
+
 import { LoginContext } from "../../context/ContextProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -16,7 +16,7 @@ const Cart = () => {
   // console.log(account)
 
   const getIndividualData = async () => {
-    const res = await fetch(`https://amazon-clone-production-fe60.up.railway.app/getproductsone/${id}`, {
+    const res = await fetch(`https://amazon-api-xxig.onrender.com/getproductsone/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -41,7 +41,7 @@ const Cart = () => {
 
   const addToCart = async (id) => {
     // console.log(id);
-    const res = await fetch(`https://amazon-clone-production-fe60.up.railway.app/addcart/${id}`, {
+    const res = await fetch(`https://amazon-api-xxig.onrender.com/addcart/${id}`, {
       method: "POST",
       headers: {
         Accept: "application/json",

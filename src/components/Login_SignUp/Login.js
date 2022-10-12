@@ -24,7 +24,7 @@ const Login = () => {
     e.preventDefault();
     const { email, password } = credentials;
 
-    const res = await fetch("https://amazon-clone-production-fe60.up.railway.app/login", {
+    const res = await fetch("https://amazon-api-xxig.onrender.com/login", {
       method: "POST",
       credentials: 'include',
       headers: {

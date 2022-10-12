@@ -2,7 +2,7 @@ import { Divider } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import "./buynow.css";
 import icon from "./icon.png";
-// import item from "./item.webp";
+
 import Option from "./Option";
 import Subtotal from "./Subtotal";
 import Right from "./Right";
@@ -11,7 +11,7 @@ const Buynow = () => {
   const [cartData, setCartData] = useState("");
 
   const getCartBuyData = async () => {
-    const res = await fetch("https://amazon-clone-production-fe60.up.railway.app/cartdata", {
+    const res = await fetch("https://amazon-api-xxig.onrender.com/cartdata", {
       method: "GET",
       headers: {
         Accept: "application/json",
